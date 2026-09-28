@@ -1,0 +1,68 @@
+{
+  "type": "page",
+  "title": "Step 4",
+  "initialState": {
+    "now": "0",
+    "waiting": 0,
+    "notice": ""
+  },
+  "content": {
+    "type": "center",
+    "child": {
+      "type": "linear",
+      "direction": "vertical",
+      "spacing": 12,
+      "alignment": "center",
+      "children": [
+        {
+          "type": "text",
+          "text": "{{now}}",
+          "style": {
+            "fontSize": 92,
+            "fontWeight": "bold",
+            "color": "#111827"
+          }
+        },
+        {
+          "type": "text",
+          "text": "{{waiting}} waiting",
+          "style": {
+            "fontSize": 20,
+            "color": "#6b7280"
+          }
+        },
+        {
+          "type": "linear",
+          "direction": "horizontal",
+          "spacing": 10,
+          "children": [
+            {
+              "type": "button",
+              "label": "Call next",
+              "onTap": {
+                "type": "tool",
+                "tool": "queue.next"
+              }
+            },
+            {
+              "type": "button",
+              "label": "Take a ticket",
+              "onTap": {
+                "type": "tool",
+                "tool": "queue.take"
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "{{notice}}",
+          "style": {
+            "fontSize": 15,
+            "color": "#9ca3af"
+          }
+        }
+      ]
+    }
+  }
+}

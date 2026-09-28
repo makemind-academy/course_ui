@@ -1,0 +1,45 @@
+{
+  "type": "page",
+  "title": "Step 3",
+  "initialState": {
+    "now": "7",
+    "waiting": 0
+  },
+  "content": {
+    "type": "center",
+    "child": {
+      "type": "linear",
+      "direction": "vertical",
+      "spacing": 10,
+      "alignment": "center",
+      "children": [
+        {
+          "type": "text",
+          "text": "NOW SERVING",
+          "style": {
+            "fontSize": 15,
+            "letterSpacing": 5,
+            "color": "#6b7280"
+          }
+        },
+        {
+          "type": "text",
+          "text": "{{now}}",
+          "style": {
+            "fontSize": 92,
+            "fontWeight": "bold",
+            "color": "#111827"
+          }
+        },
+        {
+          "type": "text",
+          "text": "{{waiting}} waiting",
+          "style": {
+            "fontSize": 20,
+            "color": "#6b7280"
+          }
+        }
+      ]
+    }
+  }
+}

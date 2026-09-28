@@ -1,0 +1,16 @@
+{
+  "type": "page",
+  "title": "Step 1",
+  "content": {
+    "type": "center",
+    "child": {
+      "type": "text",
+      "text": "The whole screen is this file",
+      "style": {
+        "fontSize": 34,
+        "fontWeight": "bold",
+        "color": "#111827"
+      }
+    }
+  }
+}

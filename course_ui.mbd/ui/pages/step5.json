@@ -1,0 +1,85 @@
+{
+  "type": "page",
+  "title": "Step 5",
+  "initialState": {
+    "rows": [],
+    "waiting": 0,
+    "empty": true
+  },
+  "content": {
+    "type": "center",
+    "child": {
+      "type": "linear",
+      "direction": "vertical",
+      "spacing": 14,
+      "alignment": "center",
+      "children": [
+        {
+          "type": "text",
+          "text": "{{waiting}} WAITING",
+          "style": {
+            "fontSize": 15,
+            "letterSpacing": 5,
+            "color": "#6b7280"
+          }
+        },
+        {
+          "type": "conditional",
+          "condition": "{{empty}}",
+          "then": {
+            "type": "text",
+            "text": "Nobody is waiting",
+            "style": {
+              "fontSize": 24,
+              "color": "#9ca3af"
+            }
+          },
+          "orElse": {
+            "type": "box",
+            "width": 460,
+            "height": 210,
+            "decoration": {
+              "color": "#ffffff",
+              "borderRadius": 12,
+              "border": {
+                "color": "#e5e7eb",
+                "width": 1
+              }
+            },
+            "padding": {
+              "all": 14
+            },
+            "child": {
+              "type": "list",
+              "items": "{{rows}}",
+              "itemTemplate": {
+                "type": "linear",
+                "direction": "horizontal",
+                "distribution": "spaceBetween",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "{{item.no}}",
+                    "style": {
+                      "fontSize": 22,
+                      "fontWeight": "bold",
+                      "color": "#111827"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": "{{item.since}}",
+                    "style": {
+                      "fontSize": 18,
+                      "color": "#6b7280"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

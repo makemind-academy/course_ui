@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0.0",
+  "manifest": {
+    "id": "com.makemind.sample.course_ui",
+    "name": "UI course",
+    "version": "1.0.0",
+    "schemaVersion": "1.0.0",
+    "type": "application",
+    "entryPoint": "ui.app",
+    "description": "The five screens of the UI course, each one JSON file, opened as one bundle.",
+    "provider": "MakeMind",
+    "license": "MIT",
+    "category": "education",
+    "tags": [
+      "course",
+      "ui",
+      "sample"
+    ],
+    "publisher": {
+      "name": "makemind.dev",
+      "email": "dev@makemind.dev"
+    }
+  }
+}

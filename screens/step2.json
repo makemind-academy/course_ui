@@ -1,0 +1,12 @@
+{ "type": "page", "title": "Step 2",
+  "content": { "type": "center",
+    "child": { "type": "linear", "direction": "vertical", "spacing": 12, "alignment": "center",
+      "children": [
+        { "type": "text", "text": "ROOM 2", "style": { "fontSize": 15, "letterSpacing": 5, "color": "#6b7280" } },
+        { "type": "text", "text": "Layout is a direction and a gap",
+          "style": { "fontSize": 26, "fontWeight": "bold", "color": "#111827" } },
+        { "type": "linear", "direction": "horizontal", "spacing": 16,
+          "children": [
+            { "type": "box", "width": 90, "height": 56, "decoration": { "color": "#ede9fe", "borderRadius": 10 } },
+            { "type": "box", "width": 90, "height": 56, "decoration": { "color": "#ddd6fe", "borderRadius": 10 } },
+            { "type": "box", "width": 90, "height": 56, "decoration": { "color": "#c4b5fd", "borderRadius": 10 } } ] } ] } } }

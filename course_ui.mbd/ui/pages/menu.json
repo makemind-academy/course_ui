@@ -1,0 +1,104 @@
+{
+  "type": "page",
+  "metadata": {
+    "title": "UI course"
+  },
+  "content": {
+    "type": "container",
+    "padding": {
+      "all": 24
+    },
+    "child": {
+      "type": "linear",
+      "direction": "vertical",
+      "gap": 10,
+      "children": [
+        {
+          "type": "text",
+          "content": "Five screens, five files",
+          "style": {
+            "fontSize": 21,
+            "fontWeight": "bold"
+          }
+        },
+        {
+          "type": "text",
+          "content": "Each step is one JSON file. The player draws it; nothing here is compiled.",
+          "style": {
+            "fontSize": 14
+          }
+        },
+        {
+          "type": "button",
+          "label": "Step 1 · the screen is the file",
+          "variant": "outlined",
+          "onTap": {
+            "type": "navigation",
+            "action": "push",
+            "route": "/step1"
+          }
+        },
+        {
+          "type": "button",
+          "label": "Step 2 · layout is a direction and a gap",
+          "variant": "outlined",
+          "onTap": {
+            "type": "navigation",
+            "action": "push",
+            "route": "/step2"
+          }
+        },
+        {
+          "type": "button",
+          "label": "Step 3 · the number is not in the file",
+          "variant": "outlined",
+          "onTap": {
+            "type": "navigation",
+            "action": "push",
+            "route": "/step3"
+          }
+        },
+        {
+          "type": "button",
+          "label": "Step 3 · same file, another state",
+          "variant": "outlined",
+          "onTap": {
+            "type": "navigation",
+            "action": "push",
+            "route": "/step3_alt"
+          }
+        },
+        {
+          "type": "button",
+          "label": "Step 4 · the button names a tool",
+          "variant": "outlined",
+          "onTap": {
+            "type": "navigation",
+            "action": "push",
+            "route": "/step4"
+          }
+        },
+        {
+          "type": "button",
+          "label": "Step 5 · one file, two shapes (empty)",
+          "variant": "outlined",
+          "onTap": {
+            "type": "navigation",
+            "action": "push",
+            "route": "/step5"
+          }
+        },
+        {
+          "type": "button",
+          "label": "Step 5 · one file, two shapes (filled)",
+          "variant": "outlined",
+          "onTap": {
+            "type": "navigation",
+            "action": "push",
+            "route": "/step5_filled"
+          }
+        }
+      ]
+    }
+  }
+}

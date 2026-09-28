@@ -1,0 +1,16 @@
+{
+  "type": "application",
+  "title": "UI course",
+  "version": "1.0.0",
+  "initialRoute": "/",
+  "routes": {
+    "/": "ui://pages/menu",
+    "/step1": "ui://pages/step1",
+    "/step2": "ui://pages/step2",
+    "/step3": "ui://pages/step3",
+    "/step3_alt": "ui://pages/step3_alt",
+    "/step4": "ui://pages/step4",
+    "/step5": "ui://pages/step5",
+    "/step5_filled": "ui://pages/step5_filled"
+  }
+}
